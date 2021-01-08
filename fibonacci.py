@@ -6,12 +6,15 @@ def calc(value):
     first = 0
     second = 1
 
-    while x < value:
-        third = first + second
-        first = second
-        second = third
-        x += 1
+    if value == 1 or value == 2:
+        print(1)    
+    elif value > 2:
+        while x < value:
+            third = first + second
+            first = second
+            second = third
+            x += 1
 
-    print(third)
+        print(third)
 
 calc(value)
